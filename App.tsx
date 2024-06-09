@@ -1,5 +1,6 @@
 import { View, Text, StyleSheet, Button } from 'react-native'
 import React from 'react'
+import { fontFamilies } from './src/constant/fontFamilies'
 
 const App = () => {
   return (
@@ -8,6 +9,7 @@ const App = () => {
         style={{
           color: '#fafafa',
           fontSize: 18,
+          fontFamily: fontFamilies.regular
         }}
       >Welcome to my first app</Text>
       <Text style={styles.title}>ToDoList</Text>
@@ -27,7 +29,7 @@ const styles = StyleSheet.create({
   },
 
   title: {
-    fontWeight: '700',
+    fontFamily: fontFamilies.bold,
     fontSize: 32,
     color: '#fff'
   }
